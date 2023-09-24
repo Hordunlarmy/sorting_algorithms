@@ -27,5 +27,8 @@ void selection_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
 void swap_node(listint_t **head, listint_t **node1, listint_t *node2);
 void print_list(const listint_t *list);
+void quick_sort(int *array, size_t size);
+void quick_sort_sub(int *array, int low, int high, size_t size);
+int lomuto_partition_scheme(int *array, int low, int high, size_t size);
 
 #endif /* SORT_H */
